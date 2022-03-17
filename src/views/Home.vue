@@ -1,7 +1,17 @@
 <template>
   <div id="home">
-    <!-- <img class="logo" src="../assets/logo.png" alt="logo" /> -->
 
     <h1>👋Hello world🌎</h1>
+    <p>{{count}}</p>
   </div>
 </template>
+
+<script>
+import { mapState } from 'vuex'
+
+export default {
+computed: {
+  ...mapState(['count'])
+}
+}
+</script>
