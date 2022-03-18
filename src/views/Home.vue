@@ -1,17 +1,17 @@
 <template>
   <div id="home">
-
     <h1>👋Hello world🌎</h1>
-    <p>{{count}}</p>
+    <p>{{ count }}</p>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from "vuex";
 
 export default {
-computed: {
-  ...mapState(['count'])
-}
-}
+  name: "home-page",
+  computed: {
+    ...mapState(["count"]),
+  },
+};
 </script>
